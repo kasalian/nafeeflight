@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.8.4
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Dec 22, 2018 at 02:05 AM
+- Server version: 10.1.37-MariaDB
+- PHP Version: 7.3.0
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="nafeeflight" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="reservation">
+                CREATE TABLE `reservation` (
+                  `id` int(255) NOT NULL AUTO_INCREMENT,
+                  `firstname` varchar(255) NOT NULL,
+                  `lastname` varchar(255) NOT NULL,
+                  `address` varchar(255) NOT NULL,
+                  `email` varchar(50) NOT NULL,
+                  `gender` varchar(50) NOT NULL,
+                  `flying_from` varchar(255) NOT NULL,
+                  `flying_to` varchar(255) NOT NULL,
+                  `amount` int(100) NOT NULL,
+                  `paymentstatus` int(2) NOT NULL,
+                  `ticket` varchar(255) NOT NULL,
+                  `date` date NOT NULL,
+                  `contact_firstname` varchar(255) NOT NULL,
+                  `contact_lastname` varchar(255) NOT NULL,
+                  `contact_number` varchar(255) NOT NULL,
+                  `contact_email` varchar(50) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'nafeeflight'
+    -->
+    <database name="nafeeflight">
+        <!-- Table reservation -->
+        <table name="reservation">
+            <column name="id">1</column>
+            <column name="firstname">John</column>
+            <column name="lastname">Eniola</column>
+            <column name="address">Uplift Hub Nigeria, Federal Polytechnic Bauchi, Bauchi State</column>
+            <column name="email">eniola@uplift.ng</column>
+            <column name="gender">Male</column>
+            <column name="flying_from">Jos</column>
+            <column name="flying_to">Bauchi</column>
+            <column name="amount">15000</column>
+            <column name="paymentstatus">0</column>
+            <column name="ticket">535909</column>
+            <column name="date">2018-12-03</column>
+            <column name="contact_firstname">James</column>
+            <column name="contact_lastname">Eniola</column>
+            <column name="contact_number">08063078990</column>
+            <column name="contact_email">eniolajam@gmail.com</column>
+        </table>
+        <table name="reservation">
+            <column name="id">2</column>
+            <column name="firstname">dd</column>
+            <column name="lastname">dd</column>
+            <column name="address">ds</column>
+            <column name="email">omachokoannabel@gmail.com</column>
+            <column name="gender">Female</column>
+            <column name="flying_from">Lagos</column>
+            <column name="flying_to">lagos</column>
+            <column name="amount">0</column>
+            <column name="paymentstatus">0</column>
+            <column name="ticket">758821</column>
+            <column name="date">2018-11-10</column>
+            <column name="contact_firstname"></column>
+            <column name="contact_lastname"></column>
+            <column name="contact_number"></column>
+            <column name="contact_email"></column>
+        </table>
+        <table name="reservation">
+            <column name="id">3</column>
+            <column name="firstname">John</column>
+            <column name="lastname">Eniola</column>
+            <column name="address">Uplift Hub Nigeria, Federal Polytechnic Bauchi, Bauchi State</column>
+            <column name="email">omachokoannabel@gmail.com</column>
+            <column name="gender">Female</column>
+            <column name="flying_from">Abuja</column>
+            <column name="flying_to">Gombe</column>
+            <column name="amount">0</column>
+            <column name="paymentstatus">0</column>
+            <column name="ticket">945544</column>
+            <column name="date">2018-11-10</column>
+            <column name="contact_firstname"></column>
+            <column name="contact_lastname"></column>
+            <column name="contact_number"></column>
+            <column name="contact_email"></column>
+        </table>
+        <table name="reservation">
+            <column name="id">4</column>
+            <column name="firstname">Semmwa</column>
+            <column name="lastname">Wilson</column>
+            <column name="address">RAILWAY QUARTERS BAUCHI</column>
+            <column name="email">wilsonsemmwa@gmail.com</column>
+            <column name="gender">Female</column>
+            <column name="flying_from">Bauchi</column>
+            <column name="flying_to">Jos</column>
+            <column name="amount">0</column>
+            <column name="paymentstatus">0</column>
+            <column name="ticket">243342</column>
+            <column name="date">2018-12-17</column>
+            <column name="contact_firstname">Planang</column>
+            <column name="contact_lastname">Wilson</column>
+            <column name="contact_number">3</column>
+            <column name="contact_email">semmwa@uplift.ng</column>
+        </table>
+    </database>
+</pma_xml_export>
